@@ -1,0 +1,53 @@
+
+# 📚 Library Management System (Python OOP)
+
+## 📖 Project Description
+A comprehensive Library Management System built using Object-Oriented Programming principles in Python.  
+This system helps librarians manage books, members, and borrowing operations efficiently.
+
+---
+
+## 🎯 What I Learned
+- Object-Oriented Programming concepts (Classes & Objects)
+- Encapsulation and data management
+- Designing real-world systems using classes
+- File handling using JSON
+- Menu-driven programs
+- Error handling
+
+---
+
+## ✨ Features
+- Add, remove, and search books
+- Register and manage members
+- Borrow and return books
+- Due date tracking
+- Overdue book tracking
+- Book limit per member
+- Search by title, author, or ISBN
+- Save and load data using JSON
+- User-friendly menu interface
+
+---
+
+## ▶ How to Run the Project
+
+```bash
+cd week5-library-system
+python -m library_system.main
+class Book:
+    def __init__(self, title, author, isbn):
+        self.title = title
+        self.author = author
+        self.isbn = isbn
+        self.available = True
+class Member:
+    def __init__(self, name, member_id):
+        self.name = name
+        self.member_id = member_id
+        self.borrowed_books = []
+        self.max_books = 5
+class Library:
+    def __init__(self):
+        self.books = {}
+        self.members = {}
