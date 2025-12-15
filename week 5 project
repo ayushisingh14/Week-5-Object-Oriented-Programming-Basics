@@ -1,0 +1,35 @@
+Step-by-Step Guide:
+Step 1: Design Class Structure
+• Plan the attributes and methods for each class
+• Define relationships between classes
+• Create UML diagram or class structure sketch
+Step 2: Implement Book Class
+• Create Book class with __init__ method
+• Add attributes: title, author, isbn, year, available (boolean)
+• Add __str__ method for readable representation
+• Add methods: check_out(), return_book()
+Step 3: Implement Member Class
+• Create Member class with __init__ method
+• Add attributes: name, member_id, borrowed_books (list)
+• Add methods: borrow_book(), return_book()
+• Add maximum borrow limit (e.g., 5 books)
+Step 4: Implement Library Class
+• Create Library class to manage collections
+• Add attributes: books (dictionary), members (dictionary)
+• Add methods: add_book(), remove_book(), find_book()
+• Add methods: register_member(), find_member()
+Step 5: Implement Core Functionality
+• Add borrow_book() method in Library class
+• Add return_book() method with overdue calculation
+• Implement search by title, author, or ISBN
+• Add statistics: total books, available books, etc.
+Step 6: Add File Operations
+• Save/load books to JSON file
+• Save/load members to JSON file
+• Implement backup functionality
+• Handle file errors gracefully
+Step 7: Create User Interface
+• Build a menu system for librarians
+• Add input validation for all operations
+• Create formatted displays for books and members
+• Add search results display
